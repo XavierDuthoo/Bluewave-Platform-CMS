@@ -1,0 +1,50 @@
+.loader, .stats-wrapper, .stats-wrapper-2 {
+    @include transition-property(all);
+    @include transition-duration(400ms);
+    @include transition-timing-function(ease-in);
+
+    &.out {
+        @include opacity(0);
+    }
+}
+
+.stats-wrapper-2 {
+    margin-top: 50px;
+}
+
+.spinner {
+    background: url(../img/spinner_32.gif) no-repeat;
+    background-size: 100%;
+    width: 25px; height: 25px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+h3.users {
+    position: relative;
+    &:before {
+        width: 20px; height: 20px;
+        display: block;
+        background: url(../img/users-icon.png) no-repeat;
+        background-size: 100%;
+        content: " ";
+        position: absolute;
+        top: -30px; left: 50%;
+        margin-left: -10px;
+    }
+}
+
+h3.usage {
+    position: relative;
+    &:before {
+        width: 20px; height: 20px;
+        display: block;
+        background: url(../img/cloud-icon.png) no-repeat;
+        background-size: 100%;
+        content: " ";
+        position: absolute;
+        top: -30px; left: 50%;
+        margin-left: -10px;
+    }
+}

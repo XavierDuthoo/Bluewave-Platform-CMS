@@ -1,0 +1,260 @@
+/* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_base.scss */
+.hide {
+  display: none;
+}
+
+/* line 2, ../sass/_ui.scss */
+.logopanel a {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  display: inline-block;
+  background: url(../img/bluewave.png) no-repeat center center;
+  background-size: 100%;
+  width: 200px;
+  height: 48px;
+}
+/* line 10, ../sass/_ui.scss */
+.logopanel.small {
+  height: 50px;
+}
+/* line 13, ../sass/_ui.scss */
+.logopanel.small h1 a {
+  width: 127px;
+  height: auto;
+}
+
+/* line 22, ../sass/_ui.scss */
+.headerbar select {
+  display: inline-block;
+  float: left;
+  width: 200px;
+  margin: 10px;
+}
+
+/* line 30, ../sass/_ui.scss */
+.avatar-preview {
+  color: #fff;
+  font-size: 1.5em;
+  width: 90px;
+  height: 90px;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  -ms-border-radius: 90px;
+  -o-border-radius: 90px;
+  border-radius: 90px;
+  background-color: #c1c4c6;
+  display: block;
+  line-height: 90px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+/* line 42, ../sass/_ui.scss */
+.avatar-preview div {
+  position: absolute;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  top: 0;
+  left: 0;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  -ms-border-radius: 90px;
+  -o-border-radius: 90px;
+  border-radius: 90px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+  background-image: url(../img/default-avavatar.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* line 57, ../sass/_ui.scss */
+.avatar-preview i {
+  z-index: 9999;
+  position: relative;
+}
+/* line 63, ../sass/_ui.scss */
+.avatar-preview.chosen i {
+  display: none;
+}
+/* line 67, ../sass/_ui.scss */
+.avatar-preview.chosen div {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 72, ../sass/_ui.scss */
+.avatar-preview:hover {
+  color: #fff;
+}
+/* line 75, ../sass/_ui.scss */
+.avatar-preview:hover div {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+/* line 86, ../sass/_ui.scss */
+hr {
+  border-top: 1px solid #D3D3D3 !important;
+}
+
+/* line 90, ../sass/_ui.scss */
+span.error {
+  color: #E83B3B;
+}
+
+/* line 94, ../sass/_ui.scss */
+span.success {
+  color: #61A43C;
+}
+
+#basicflot{
+  padding: 20px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+table tr th{  
+  background-color: #1d2939;
+  color: white;
+}
+
+table tr td{
+  background-color: #eaeaea;
+}
+
+table tr th, table tr td{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
+
+.slick-header-column{
+  float: left;
+}
+
+.block{
+  margin-right: 20px;
+}
+
+.pagelink{
+  margin-left: 20px;
+}
+#txtSearch{
+  margin-bottom: 20px;
+  width: 300px;
+  padding: 10px 20px 2px 10px;
+}
+#google-visualization-errors-all-1 span{
+  background-color: transparent!important;
+}
+
+.datepicker button{
+  background-color: transparent!important;
+  border:none;
+}
+
+.datepicker table tr th.today:hover{
+  background-color: #2a3c54!important;
+}
+#datetimepicker, #datetimepickerstart, #datetimepickerend{
+  width: 220px;
+  float:left;
+  margin-right: 40px;
+}
+#kiesperiode{
+  display: inline-block;
+  float: left;
+  text-align: center;
+  line-height: 45px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.highlight{
+  background-color: red;
+}
+#chart_div{
+  position: relative;
+  top: 50px;
+}

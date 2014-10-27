@@ -1,0 +1,96 @@
+.logopanel {
+    a {
+        @include hide-text();
+        display: inline-block;
+        background: url(../img/bluewave.png) no-repeat center center;
+        background-size: 100%;
+        width: 200px; height: 48px;
+    }
+
+    &.small {
+        height: 50px;
+        h1 {
+            a {
+                width: 127px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.headerbar {
+    select {
+        display: inline-block;
+        float: left;
+        width: 200px;
+        margin: 10px;
+    }
+}
+
+.avatar-preview {
+    color: #fff;
+    font-size: 1.5em;
+    width: 90px; height: 90px;
+    @include border-radius(90px);
+    background-color: shade(#E4E7EA, 15);
+    display: block;
+    line-height: 90px;
+    margin: 0 auto;
+    position: relative;
+    @include transition(all 300ms ease-in-out);
+
+    div {
+        position: absolute;
+        @include transition(all 300ms ease-in-out);
+        top: 0; left: 0;
+        @include border-radius(90px);
+        @include opacity(0.2);
+        background-image: url(../img/default-avavatar.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    i {
+        z-index: 9999;
+        position: relative;
+    }
+
+    &.chosen {
+        i {
+            display: none;
+        }
+
+        div {
+            @include opacity(1);
+        }
+    }
+
+    &:hover {
+        color: #fff;
+        
+        div {
+            @include opacity(0.4);
+            @include scale(1.1, 1.1);
+        }
+    }
+}
+
+.saved {
+    // position: absolute;
+}
+
+hr {
+    border-top: 1px solid #D3D3D3 !important;
+}
+
+span.error {
+    color: #E83B3B;
+}
+
+span.success {
+    color: #61A43C;
+}
